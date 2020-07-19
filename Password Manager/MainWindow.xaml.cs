@@ -73,6 +73,7 @@ namespace Password_Manager
             websitecount.Text = Convert.ToString(websitec);
 
             string emailsearch = "SELECT Count(*) from MainData WHERE Type='Email' and UserId = @Us";
+            //This is just a test 
             SqlCommand emailfind = new SqlCommand(emailsearch, con);
             emailfind.Parameters.AddWithValue("@Us", username);
             int emailc = (int)emailfind.ExecuteScalar();
