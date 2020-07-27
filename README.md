@@ -6,7 +6,7 @@ The User Interface is made with care to be modern and styish but also to be easy
 
 HOW TO USE THE APP: Note: The software is still in the development process, so you might encounter bugs and errors.
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](/relative//blob/master/bg.jpg?raw=true "Optional Title")
 
 [a link](https://github.com/MohdZish/Password-Manager-App/blob/master/bg.jpg)
 
