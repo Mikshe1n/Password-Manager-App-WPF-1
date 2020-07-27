@@ -6,7 +6,7 @@ The User Interface is made with care to be modern and styish but also to be easy
 
 HOW TO USE THE APP: Note: The software is still in the development process, so you might encounter bugs and errors.
 
-![alt text](https://github.com/MohdZish/Password-Manager-App/blob/bg.jpg?raw=true)
+![alt text](https://github.com/MohdZish/Password-Manager-App/bg.jpg?raw=true)
 bg.jpg
 
 Install the .exe file provided with the files.
