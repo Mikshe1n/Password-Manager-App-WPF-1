@@ -67,5 +67,12 @@ namespace Password_Manager
                     break;
             }
         }
+
+
+
+        private void Backbtn(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+        }
     }
 }
