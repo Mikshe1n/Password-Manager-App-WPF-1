@@ -51,7 +51,7 @@ namespace Password_Manager
         
         private void Buttonlogin(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source= localhost\sqlexpress; Initial Catalog=PasswordManager; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+            SqlConnection sqlCon = new SqlConnection(@"Data Source= DESKTOP-O99C3DO\SQLEXPRESS; Initial Catalog=PasswordManager; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
             
             try
             {
@@ -94,6 +94,11 @@ namespace Password_Manager
             SignUp dashboard = new SignUp();
             dashboard.Show();
             this.Close();
+        }
+
+        private void usernameinput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 

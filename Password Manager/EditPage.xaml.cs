@@ -35,7 +35,7 @@ namespace Password_Manager
             displayname = itemname;
             nameedit.Text = itemname;
 
-            SqlConnection con = new SqlConnection(@"Data Source= localhost\sqlexpress; Initial Catalog=PasswordManager; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+            SqlConnection con = new SqlConnection(@"Data Source= DESKTOP-O99C3DO\SQLEXPRESS; Initial Catalog=PasswordManager; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
             if (con.State == System.Data.ConnectionState.Closed)
                 con.Open();
 
@@ -108,7 +108,7 @@ namespace Password_Manager
             {
                 string titlename = (string)(sender as Button).Tag;
 
-                SqlConnection con = new SqlConnection(@"Data Source= localhost\sqlexpress; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+                SqlConnection con = new SqlConnection(@"Data Source= DESKTOP-O99C3DO\SQLEXPRESS; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
                 if (con.State == System.Data.ConnectionState.Closed)
                     con.Open();
 

@@ -15,14 +15,14 @@
         <Border BorderThickness="1" BorderBrush="#FF378BF3">
             <StackPanel>
                 <Grid>
-                    <TextBlock Text="ADD NEW PASSWORD" Margin="10 10 0 0" Foreground="White" FontFamily="Candara Light" FontSize="16" ></TextBlock>
+                    <TextBlock Text="Добавление аккаунта" Margin="10 10 0 0" Foreground="White" FontFamily="Candara Light" FontSize="16" ></TextBlock>
                     <Button x:Name="buttonclose" Content="×" Margin="0,0,0,0" Click="Buttonclose" Width="50" FontSize="30" FontFamily="Calibri Light" Background="#0014121A" HorizontalAlignment="Right" BorderBrush="#FFA3A3A3" BorderThickness="0" Foreground="White" Opacity="0.95" Height="41" VerticalAlignment="Top"/>
                     <Button x:Name="buttonminimise" Content="-" Margin="0,0,50,0" Click="Buttonminimise" Width="50" FontSize="30" FontFamily="Calibri Light" Background="#0014121A" HorizontalAlignment="Right" BorderBrush="#FFA3A3A3" BorderThickness="0" Foreground="White" Opacity="0.95" Height="41" VerticalAlignment="Top"/>
                 </Grid>
                 <StackPanel Orientation="Horizontal">
                     <StackPanel>
                         <Grid>
-                            <TextBlock Text="Name" Margin="20 10 0 0" Foreground="White" FontFamily="Candara Light" FontSize="16" ></TextBlock>
+                            <TextBlock Text="Название" Margin="20 10 0 0" Foreground="White" FontFamily="Candara Light" FontSize="16" ></TextBlock>
                             <TextBox x:Name="namecreate" Margin="20 30 0 0" BorderThickness="0" Width="250" Height="25" Foreground="White" HorizontalAlignment="Left" Background="#0014121A" FontSize="18"></TextBox>
                             <Rectangle Width="250" Margin="20 0 0 0" Fill="#7FFFFFFF" HorizontalAlignment="Left" Height="1" VerticalAlignment="Bottom"></Rectangle>
                         </Grid>
@@ -31,7 +31,7 @@
                                 <ColumnDefinition Width="13*"/>
                                 <ColumnDefinition Width="17*"/>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="Select Type" Margin="20,10,0,-0.667" Foreground="White" FontFamily="Candara Light" FontSize="16" Grid.ColumnSpan="2" ></TextBlock>
+                            <TextBlock Text="Выберите тип" Margin="20,10,0,-0.667" Foreground="White" FontFamily="Candara Light" FontSize="16" Grid.ColumnSpan="2" ></TextBlock>
                             <ComboBox Name="type" Margin="0,10,0,0.333" Width="100" Height="25" HorizontalAlignment="Right" Grid.Column="1" Opacity="0.9">
                                 <ComboBoxItem Content="Website"></ComboBoxItem>
                                 <ComboBoxItem Content="Email"></ComboBoxItem>
@@ -42,19 +42,19 @@
                             </ComboBox>
                         </Grid>
                         <Grid>
-                            <TextBlock Text="Username" Margin="20 10 0 0" Foreground="White" FontFamily="Candara Light" FontSize="16" ></TextBlock>
+                            <TextBlock Text="Логин" Margin="20 10 0 0" Foreground="White" FontFamily="Candara Light" FontSize="16" ></TextBlock>
                             <TextBox x:Name="usernamecreate" Margin="20 30 0 0" BorderThickness="0" Width="250" Height="25" Foreground="White" HorizontalAlignment="Left" Background="#0014121A" FontSize="18"></TextBox>
                             <Rectangle Width="250" Margin="20 60 0 0" Fill="#7FFFFFFF" HorizontalAlignment="Left" Height="1"></Rectangle>
                         </Grid>
                         <Grid>
-                            <TextBlock Text="Password" Margin="20 10 0 0" Foreground="White" FontFamily="Candara Light" FontSize="16" ></TextBlock>
+                            <TextBlock Text="Пароль" Margin="20 10 0 0" Foreground="White" FontFamily="Candara Light" FontSize="16" ></TextBlock>
                             <TextBox x:Name="passwordcreate" Margin="20 30 0 0" BorderThickness="0" Width="250" Height="25" Foreground="White" HorizontalAlignment="Left" Background="#0014121A" FontSize="18"></TextBox>
                             <Rectangle Width="250" Margin="20 60 0 0" Fill="#7FFFFFFF" HorizontalAlignment="Left" Height="1"></Rectangle>
                         </Grid>
                     </StackPanel>
 
                     <StackPanel>
-                        <Button Content="Create" Click="Buttoncreate"  BorderThickness="1" Margin="0 20 0 10" Height="30" HorizontalAlignment="Right" Width="50" Background="#FF378BF3" Foreground="White" BorderBrush="#00CACACA"></Button>
+                        <Button Content="Сохранить" Click="Buttoncreate"  BorderThickness="1" Margin="0 20 0 10" Height="30" HorizontalAlignment="Right" Width="90" Background="#FF378BF3" Foreground="White" BorderBrush="#00CACACA"></Button>
                         <TextBox x:Name="descriptioncreate" Margin="20 0 0 0"  Width="190" Height="150" Background="#E5FFFFFF" FontSize="18"></TextBox>
                     </StackPanel>
                 </StackPanel>

@@ -16,4 +16,4 @@ Now you can use the app to save and manage passwords.
 
 Note: I've removed the app from github due to some bugs, which I might have to work later on.
 
-Thank you. You can contact me at: mohdzish2000@gmail.com
+Thank you. You can contact me at: Mishaili4ev@yandex.ru

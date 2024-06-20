@@ -50,7 +50,7 @@ namespace Password_Manager
 
         private void itempasswordmethod(object sender, RoutedEventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source= localhost\sqlexpress; Initial Catalog=PasswordManager; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+            SqlConnection con = new SqlConnection(@"Data Source= DESKTOP-O99C3DO\SQLEXPRESS; Initial Catalog=PasswordManager; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
             string CmdString = "SELECT password FROM MainData where name = @itemname";
             SqlCommand cmd = new SqlCommand(CmdString, con);
             cmd.Parameters.AddWithValue("@itemname", itemname);
@@ -62,7 +62,7 @@ namespace Password_Manager
 
         private void SortCount()
         {
-            SqlConnection con = new SqlConnection(@"Data Source= localhost\sqlexpress; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+            SqlConnection con = new SqlConnection(@"Data Source= DESKTOP-O99C3DO\SQLEXPRESS; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
             if (con.State == System.Data.ConnectionState.Closed)
                 con.Open();
             //Count number of website, emails etc.
@@ -110,7 +110,7 @@ namespace Password_Manager
             buttonall.Opacity = 0;
             MyPanel.Children.Clear();
             deletestate = false;
-            SqlConnection con = new SqlConnection(@"Data Source= localhost\sqlexpress; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+            SqlConnection con = new SqlConnection(@"Data Source= DESKTOP-O99C3DO\SQLEXPRESS; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
             try
             {
                 if (con.State == System.Data.ConnectionState.Closed)
@@ -270,7 +270,7 @@ namespace Password_Manager
         private void PasswordPage(object sender, RoutedEventArgs e)
         {
 
-            SqlConnection con = new SqlConnection(@"Data Source= localhost\sqlexpress; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+            SqlConnection con = new SqlConnection(@"Data Source= DESKTOP-O99C3DO\SQLEXPRESS; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
             if (con.State == System.Data.ConnectionState.Closed)
                 con.Open();
             string passwordfinding = "SELECT Password from MainData WHERE Name=@Name and UserId = @Us";
@@ -329,7 +329,7 @@ namespace Password_Manager
             }
 
             MyPanel.Children.Clear();
-            SqlConnection con = new SqlConnection(@"Data Source= localhost\sqlexpress; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+            SqlConnection con = new SqlConnection(@"Data Source= DESKTOP-O99C3DO\SQLEXPRESS; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
             try
             {
                 if (con.State == System.Data.ConnectionState.Closed)
@@ -448,7 +448,7 @@ namespace Password_Manager
             string searchtext = searchbox.Text;
 
             MyPanel.Children.Clear();
-            SqlConnection con = new SqlConnection(@"Data Source= localhost\sqlexpress; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+            SqlConnection con = new SqlConnection(@"Data Source= DESKTOP-O99C3DO\SQLEXPRESS; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
             try
             {
                 if (con.State == System.Data.ConnectionState.Closed)
@@ -577,7 +577,7 @@ namespace Password_Manager
                 buttonall.IsEnabled = false;
                 buttonall.Opacity = 0;
                 MyPanel.Children.Clear();
-                SqlConnection con = new SqlConnection(@"Data Source= localhost\sqlexpress; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+                SqlConnection con = new SqlConnection(@"Data Source= DESKTOP-O99C3DO\SQLEXPRESS; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
                 try
                 {
                     if (con.State == System.Data.ConnectionState.Closed)
@@ -715,7 +715,7 @@ namespace Password_Manager
             {
                 string titlename = (string)(sender as Button).Tag;
 
-                SqlConnection con = new SqlConnection(@"Data Source= localhost\sqlexpress; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+                SqlConnection con = new SqlConnection(@"Data Source= DESKTOP-O99C3DO\SQLEXPRESS; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
                 if (con.State == System.Data.ConnectionState.Closed)
                     con.Open();
 
@@ -753,7 +753,7 @@ namespace Password_Manager
                 buttonall.IsEnabled = false;
                 buttonall.Opacity = 0;
                 MyPanel.Children.Clear();
-                SqlConnection con = new SqlConnection(@"Data Source= localhost\sqlexpress; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+                SqlConnection con = new SqlConnection(@"Data Source= DESKTOP-O99C3DO\SQLEXPRESS; Initial Catalog=PasswordManager; MultipleActiveResultSets=True; Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
                 try
                 {
                     if (con.State == System.Data.ConnectionState.Closed)

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Password_Manager"
         mc:Ignorable="d"
-        WindowStartupLocation="Manual" 
+        WindowStartupLocation="CenterScreen" 
         Left="450" Top="100"
         Title="MainWindow" Height="450" Width="300" AllowsTransparency="True" WindowStyle="None" MouseDown="Window_MouseDown" ResizeMode="NoResize">
     <Window.Background>
@@ -22,26 +22,26 @@
                 <Button x:Name="buttonminimise" Content="-" Grid.Column="1" Margin="44,-4,0,-9" Click="Buttonminimise" Width="50" FontSize="30" FontFamily="Calibri Light" Background="#0014121A" HorizontalAlignment="Left" BorderBrush="#FFA3A3A3" BorderThickness="0" Foreground="White" Height="41" Opacity="0.95" />
             </Grid>
             <Grid>
-                <Label Content="CREATE AN ACCOUNT" Foreground="White" Margin="0,4,0,26" HorizontalContentAlignment="Center" FontFamily="Corbel Light" FontSize="15"/>
-                <Rectangle Width="33"  Fill="#FF37F3AE" Margin="125,31,125,24" Height="3"/>
+                <Label Content="Создание аккаунта" Foreground="White" Margin="0,4,0,26" HorizontalContentAlignment="Center" FontFamily="Corbel Light" FontSize="15"/>
+                <Rectangle  Fill="#FF37F3AE" Margin="91,31,91,24" Height="3"/>
             </Grid>
             <Grid Height="72">
-                <Label Content="Create Username" Margin="0,0,0,0"  HorizontalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Corbel Light" Width="116"/>
+                <Label Content="Логин"  HorizontalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Corbel Light" Width="52"/>
                 <TextBox x:Name="namecreate" Text="" Margin="50,32,50,15" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Height="25" Width="200" FontFamily="Century Gothic"/>
             </Grid>
             <Grid Height="72">
-                <Label Content="Your Email" Margin="0,0,0,0"  HorizontalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Corbel Light"/>
+                <Label Content="Ваша почта" Margin="0,0,0,0"  HorizontalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Corbel Light"/>
                 <TextBox x:Name="emailcreate" Text="" Margin="50,32,50,15" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Height="25" Width="200" FontFamily="Century Gothic"/>
             </Grid>
             <Grid>
-                <Label Content="Your Password" Margin="0,-3,0,17.333"  HorizontalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Corbel Light"/>
+                <Label Content="Ваш пароль" Margin="0,-3,0,17.333"  HorizontalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Corbel Light"/>
                 <TextBox x:Name="passwordcreate" Text="" Margin="50,27,50,19.333" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Height="25" Width="200" FontFamily="Century Gothic"/>
             </Grid>
-            <Grid>
-                <Button x:Name="buttonsignup" Content="Sign Up" Click="Buttonsignup" Width="50" Margin="199,0,51,-0.333" BorderThickness="0" Height="20" Background="#FF37F3AE" Foreground="Black" FontFamily="Calibri Light"/>
+            <Grid Height="32">
+                <Button x:Name="buttonsignup" Content="Зарегистрироваться" Click="Buttonsignup" Margin="80,0,80,0" BorderThickness="0" Background="#FF37F3AE" Foreground="Black" FontSize="14" FontFamily="Calibri Light"/>
             </Grid>
             <Grid>
-                <Label Content="◀ Return To Sign In" PreviewMouseDown="Buttonreturnlogin" Margin="0,40,0,0"  HorizontalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Corbel Light"/>
+                <Label Content="◀ Вернуться к авторизации" PreviewMouseDown="Buttonreturnlogin" Margin="0,40,0,0"  HorizontalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Corbel Light"/>
             </Grid>
 
 
